@@ -11,7 +11,7 @@ public class DayTwo {
         return sum;
     }
 
-    public boolean isHappy(int n)
+    static boolean isHappy(int n)
     {
         int slow, fast;
         slow = fast = n;
@@ -24,10 +24,14 @@ public class DayTwo {
         return (slow == 1);
 
     }
-    
+
     public static void main (String ar[])
     {
-        System.out.println(sumOfSquares(19));
+        int n = 19;
+        if(isHappy(n))
+            System.out.println(n + " is a happy number.");
+        else
+            System.out.println(n + " is not a happy number.");
     }
 
 
